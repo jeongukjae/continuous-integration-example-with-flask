@@ -1,1 +1,1 @@
-from controller import auth_page
+from .controller import auth_page

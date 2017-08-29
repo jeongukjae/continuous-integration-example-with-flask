@@ -13,7 +13,7 @@ class FlaskrTestCase(unittest.TestCase):
 
     def test_index(self):
         rv = self.app.get('/')
-        assert 'Sign In' in rv.data
+        assert 'Sign In' in rv.data.decode('utf8')
 
     def test_login(self):
         rv = self.app.post('/auth/signin', data=dict(
@@ -21,7 +21,7 @@ class FlaskrTestCase(unittest.TestCase):
             email='jeongukjae@gmail.com'
         ), follow_redirects=True)
 
-        assert 'You were logged in' in rv.data
+        assert 'You were logged in' in rv.data.decode('utf-8')
 
 if __name__ == '__main__':
     unittest.main()
