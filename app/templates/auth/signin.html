@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flask Continuous Integration Example</title>
+    </head>
+    <body>
+        <form method='post'>
+            {{ form.csrf_token }}
+            <p>{{ form.email.label }} : {{ form.email(placeholder='Email') }}</p>
+            <p>{{ form.name.label }} : {{ form.name(placeholder='Name') }}</p>
+            <p><input type='submit' value='Submit!'></p>
+        </form>
+    </body>
+</html>
