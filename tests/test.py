@@ -1,7 +1,7 @@
 import unittest
 from app import create_app
 
-class FlaskrTestCase(unittest.TestCase):
+class CIExampleTestCase(unittest.TestCase):
 
     def setUp(self):
         self.app = create_app()
