@@ -1,7 +1,7 @@
 # Continuous-Integration-Example-with-Flask
 Example of Continuous Integration with Flask, Coveralls and Travis CI
 
-[![Build Status](https://travis-ci.org/JeongUkJae/Flask-Continuous-Integration-Example.svg?branch=master)](https://travis-ci.org/JeongUkJae/Flask-Continuous-Integration-Example)
+[![Build Status](https://travis-ci.org/JeongUkJae/Continuous-Integration-Example-with-Flask.svg?branch=master)](https://travis-ci.org/JeongUkJae/Continuous-Integration-Example-with-Flask)
 [![Coverage Status](https://coveralls.io/repos/github/JeongUkJae/Continuous-Integration-Example-with-Flask/badge.svg?branch=master)](https://coveralls.io/github/JeongUkJae/Continuous-Integration-Example-with-Flask?branch=master)
 
 간단한 예제를 보기 이전에, 이 예제는 python3를 기준으로 작성되고, Flask를 이용하여 작성되며, Virtualenv를 활용하기 때문에 해당 라이브러리를 미리 알고 읽는 것이 좋다고 생각합니다.
