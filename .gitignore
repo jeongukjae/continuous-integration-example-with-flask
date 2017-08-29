@@ -5,3 +5,4 @@
 pip-selfcheckin.json
 *.pyc
 .coverage
+.DS_Store
