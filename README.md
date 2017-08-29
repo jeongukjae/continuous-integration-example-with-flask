@@ -324,7 +324,7 @@ script 부분이 잘 이해가 안 가실 수도 있는데, 이 부분은 밑의
 * [Python com Unittest, Travis CI, Coveralls e Landscape (Parte 3 de 4)](http://pythonclub.com.br/python-com-unittest-travis-ci-coveralls-e-landscape-parte-3-de-4.html)
 * [coveralls-clients/coveralls-python](https://github.com/coveralls-clients/coveralls-python)
 
-위의 링크는 포르투칼 어로 쓰여있는 것 같은데, 구글 번역을 이용해본다면 다음과 같이 설명해주더군요.
+둘 중 위의 링크는 포르투칼 어로 쓰여있는 것 같은데, 구글 번역을 이용해본다면 다음과 같이 설명해주더군요.
 
 > 이 명령은 이전과 동일한 테스트를 실행하지만 코드에 대한 테스트 커버리지 보고서를 제공합니다.
 
@@ -336,25 +336,28 @@ script 부분이 잘 이해가 안 가실 수도 있는데, 이 부분은 밑의
 
 ### Coveralls 웹 페이지
 
-[coveralls 웹 페이지](https://coveralls.io/)로 가서 GitHub 계정으로 가입한다면 다음과 같은 화면을 볼 수 있다.
+[coveralls 웹 페이지](https://coveralls.io/)로 가서 GitHub 계정으로 가입한다면 다음과 같은 화면을 볼 수 있습니다.
 
 ![coveralls 화면](./image/coveralls.png)
 
-coveralls도 똑같이 repo들을 스위치 방식으로 키고 끈다. 원하는 repo를 키고 난후 Token을 받는데, 그 Token을 Travis CI에 설정해주어야 한다. (따로 파일을 만들어서 설정하는 방법, 환경변수로 설정하는 방법이 있는데, 지금 이 예제는 public repo로 만들었으니, 환경변수로 넣어줘야 받은 token을 나만 알수 있도록 관리할 수 있다.)
+coveralls도 똑같이 repo들을 스위치 방식으로 키고 끄는데, 이 중 원하는 repo를 키고 난 후 Token을 받습니다. 그리고 해당 Token을 Travis CI에 설정해주어야 합니다.
+
+ 이 토큰을 설정하는 방법은 따로 설정 파일을 만들어서 설정하는 방법, 환경변수로 설정하는 방법이 있는데, 지금 이 예제는 public repo로 만들었으니, 환경변수로 넣어줘야 받은 token을 나만 알수 있도록 관리할 수 있습니다. 만약 파일로 만들어 저장한다면, 해당 파일이 repo안에서 보일테니 더 이상 비밀 토큰이 아니게 되겠죠? 공식문서에는 이 토큰을 비밀로 유지하라고 써져 있습니다.
 
 ### Travis CI에 설정
 
 ![travis ci 환경변수](./image/travis-ci-env.png)
 
-그렇게 받은 토큰을 travis ci 환경변수에 설정한다.
+그렇게 받은 토큰을 travis ci 환경변수에 설정합니다.
 
-환경변수 이름은 ```COVERALLS_REPO_TOKEN```로 하고, 값은 coveralls에서 받은 값으로 한다.
+환경변수 이름은 ```COVERALLS_REPO_TOKEN```로 하고, 값은 coveralls에서 받은 값으로 합니다.
 
 ## 끝
 
-이제 적당히 코드를 수정해서 푸쉬해보자. 이제 테스트가 잘 돌아갈 것이고, PR에 대해서도 미리 테스트가 돌아갈 것이다. 물론 Code Coverage는 덤이다.
+이제 적당히 코드를 수정해서 푸쉬해봅시다. 이제 테스트가 잘 돌아갈 것이고, PR에 대해서도 미리 테스트가 돌아갈 것이다. 물론 Code Coverage는 덤이고요.
 
 ### + 추가
 
 이 readme의 상단에 있는 것처럼 Badge를 달아보자!
 
+Coveralls에서는 repo 세팅으로 가면, Badge 옆에 Embed가 있고, Travis CI에서는 바로 보이는 Badge를 클릭하면 Markdown으로 표기 가능하도록 변환해준다.
